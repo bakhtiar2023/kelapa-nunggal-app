@@ -24,13 +24,6 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie",
-        "DB_CONNECTION": "pgsql",
-        "DB_HOST": "ep-delicate-pine-a16tlxdz.ap-southeast-1.aws.neon.tech",
-        "DB_PORT": "5432",
-        "DB_DATABASE": "kelapanunggal",
-        "DB_USERNAME": "kelapanunggal_owner",
-        "DB_PASSWORD":"endpoint=ep-delicate-pine-a16tlxdz$pdiNenUo7GI8",
-        "DB_COLLATION":"utf8mb4_unicode_ci "
+        "SESSION_DRIVER": "cookie"
     }
 }
