@@ -19,6 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/iuran-warga',[IuranController::class,'iuran'])->name('iuran');
+    Route::get('/iuran-warga/catat',[IuranController::class,'catatIuran'])->name('catat');
 
     Route::get('/data-warga',[WargaController::class,'warga'])->name('warga');
 });

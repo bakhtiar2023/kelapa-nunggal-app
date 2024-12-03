@@ -15,9 +15,14 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    @if ( auth()->user()->role == 1)
                     <x-nav-link :href="route('warga')" :active="request()->routeIs('warga')">
                         {{ __('Data Warga') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('catat')" :active="request()->routeIs('catat')">
+                        {{ __('Catat Iuran') }}
+                    </x-nav-link>
+                    @endif
                     <x-nav-link :href="route('iuran')" :active="request()->routeIs('iuran')">
                         {{ __('Data Iuran') }}
                     </x-nav-link>
@@ -75,6 +80,17 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            @if ( auth()->user()->role == 1)
+            <x-responsive-nav-link :href="route('warga')" :active="request()->routeIs('warga')">
+                {{ __('Data Warga') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('catat')" :active="request()->routeIs('catat')">
+                {{ __('Catat Iuran') }}
+            </x-responsive-nav-link>
+            @endif
+            <x-responsive-nav-link :href="route('iuran')" :active="request()->routeIs('iuran')">
+                {{ __('Data Iuran') }}
             </x-responsive-nav-link>
         </div>
 

@@ -18,4 +18,8 @@ class IuranController extends Controller
     {
         return view('iuran.iuran');
     }
+    public function catatIuran(Request $request): View
+    {
+        return view('iuran.catat');
+    }
 }
