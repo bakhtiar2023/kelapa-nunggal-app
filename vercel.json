@@ -10,5 +10,10 @@
         { "src": "/build/(.*)", "dest": "/build/$1" },
         {"src": "/(.*)", "dest": "/api/index.php"}
     ],
+<<<<<<< HEAD
+=======
+    "public": true,
+    "buildCommand": "npm run build",
+>>>>>>> parent of 013624d (Update vercel.json)
     "outputDirectory": "public",
 }
