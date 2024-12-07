@@ -34,7 +34,7 @@ return [
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
-            'database' => env('DB_DATABASE', database_path('/home/laravel-project/database/database.sqlite')),
+            'database' => env('DB_DATABASE', database_path('postgresql://kelapanunggal_owner:pdiNenUo7GI8@ep-delicate-pine-a16tlxdz.ap-southeast-1.aws.neon.tech/kelapanunggal?sslmode=require')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
             'busy_timeout' => null,
