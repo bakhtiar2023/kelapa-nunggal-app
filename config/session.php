@@ -156,7 +156,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN','https://kelapa-nunggal-app.vercel.app'),
+    'domain' => env('SESSION_DOMAIN',kelapa-nunggal-app.vercel.app),
 
     /*
     |--------------------------------------------------------------------------
