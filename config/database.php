@@ -32,7 +32,7 @@ return [
     'connections' => [
 
         'sqlite' => [
-            'driver' => 'file',
+            'driver' => 'sqlite',
             'url' => env('DB_URL'),
             'database' => env('DB_DATABASE', database_path('/home/laravel-project/database/database.sqlite')),
             'prefix' => '',
