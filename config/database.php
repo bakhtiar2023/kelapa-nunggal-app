@@ -33,8 +33,8 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-            'url' => env('DB_URL'),
-            'database' => env('DB_DATABASE', database_path('postgresql://kelapanunggal_owner:pdiNenUo7GI8@ep-delicate-pine-a16tlxdz.ap-southeast-1.aws.neon.tech/kelapanunggal?sslmode=require')),
+            'url' => env('DB_URL','postgresql://kelapanunggal_owner:pdiNenUo7GI8@ep-delicate-pine-a16tlxdz.ap-southeast-1.aws.neon.tech/kelapanunggal?sslmode=require'),
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
             'busy_timeout' => null,
